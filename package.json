@@ -1,14 +1,14 @@
 {
-  "name": "radio-buttons-react-native-accessibility",
+  "name": "radio-buttons-react-native-expo",
   "version": "1.0.0",
-  "description": "Animated radio buttons component for react native and Expo",
+  "description": "Animated radio buttons component for react native and Expo with accessibility",
   "main": "RadioButtonRN.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webuijorgeGL/radio-buttons-react-native-and-expo.git"
+    "url": "git+https://github.com/webuijorgeGL/radio-buttons-react-native-expo-accessibility.git"
   },
   "keywords": [
     "react-component",
@@ -27,9 +27,9 @@
   "author": "Jorge Suarez <jorgsuau@live.com.co> See the credits.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/webuijorgeGL/radio-buttons-react-native-and-expo/issues"
+    "url": "https://github.com/webuijorgeGL/radio-buttons-react-native-expo-accessibility/issues"
   },
-  "homepage": "https://github.com/webuijorgeGL/radio-buttons-react-native-and-expo#readme",
+  "homepage": "https://github.com/webuijorgeGL/radio-buttons-react-native-expo-accessibility#readme",
   "directories": {
     "example": "example"
   }
