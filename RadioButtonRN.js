@@ -116,7 +116,7 @@ class RadioButtonRN extends React.Component {
 
 	render() {
 		let { activeIndex, fadeAnim, animations } = this.state;
-        let { boxStyle, style, circleSize, textStyle, data, icon, activeColor, deactiveColor, boxActiveBgColor, boxDeactiveBgColor, box, textColor } = this.props;
+        let { boxStyle, style, circleSize, textStyle, leftProductBoxStyle, centerProductBoxStyle, data, icon, activeColor, deactiveColor, boxActiveBgColor, boxDeactiveBgColor, box, textColor } = this.props;
 
 		return (
             <View style={style}>
@@ -138,7 +138,7 @@ class RadioButtonRN extends React.Component {
 			    accessibilityRole='radio'
 			    accessibilityState={{ checked: activeIndex === index }}	
                         >
-                            <View style={styles.leftProductBox}>
+                            <View style={[styles.leftProductBox, leftProductBoxStyle]}>
                                 <View style={[ icon ? styles.icon : styles.circle, {
                                     borderColor: activeIndex === index ? activeColor : deactiveColor,
                                     width: circleSize + 8,
@@ -172,7 +172,7 @@ class RadioButtonRN extends React.Component {
                                 </View>
                             </View>
 
-                            <View style={[styles.centerProductBox]}>
+                            <View style={[styles.centerProductBox, centerProductBoxStyle]}>
                                 <Text style={[{
                                     color: textColor
                                 }, textStyle]}>
@@ -237,6 +237,8 @@ RadioButtonRN.propTypes = {
 	style: PropTypes.object,
 	boxStyle: PropTypes.object,
 	textStyle: PropTypes.object,
+    leftProductBoxStyle: PropTypes.object,
+    centerProductBoxStyle: PropTypes.object,
     initial: PropTypes.number,
     circleSize: PropTypes.number,
     duration: PropTypes.number,
@@ -257,6 +259,8 @@ RadioButtonRN.defaultProps = {
 	style: {},
 	boxStyle: {},
 	textStyle: {},
+    leftProductBoxStyle: {},
+    centerProductBoxStyle: {},
     initial: -1,
     circleSize: 18,
     duration: 500,
