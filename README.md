@@ -65,6 +65,8 @@ see this simple [example](https://github.com/sramezani/radio-buttons-react-nativ
 | style  | style for all RadioButtonRN  | {} |
 | boxStyle  | style for box  | {} |
 | textStyle  | style for label text  | {} |
+| leftProductBoxStyle  | style for radio element container  | {} |
+| centerProductBoxStyle  | style for item label container  | {} |
 | circleSize  | circle size for unselected items and whitout icon selected size | 18 |
 | activeColor  | color of active button and box border  | '#03a9f4' |
 | deactiveColor  | color of deactive button  | '#e2e2e2' |
